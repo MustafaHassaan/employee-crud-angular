@@ -1,0 +1,13 @@
+<div class="page-container">
+  <div class="form-section">
+    <app-employee-form
+      [employeeId]="selectedEmployeeId"
+      (formReset)="onResetForm()"
+      (refreshList)="onRefreshList()"
+    ></app-employee-form>
+  </div>
+
+  <div class="table-section">
+    <app-employee-list (edit)="onEdit($event)"></app-employee-list>
+  </div>
+</div>
